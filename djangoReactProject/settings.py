@@ -100,7 +100,7 @@ WSGI_APPLICATION = "djangoReactProject.wsgi.application"
 DATABASES = db_settings.DATABASES
 SECRET_KEY = db_settings.SECRET_KEY
 ALLOWED_HOSTS = db_settings.ALLOWED_HOSTS
-CORS_ALLOWED_ORIGINS = db_settings.CORS_ALLOWED_ORIGINS
+# CORS_ALLOWED_ORIGINS = db_settings.CORS_ALLOWED_ORIGINS
 
 
 # Password validation
