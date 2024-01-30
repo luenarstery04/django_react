@@ -12,6 +12,9 @@ from django.conf import settings
 
 # Create your views here.
 
+def index(request):
+    return render(request, 'index.html')
+
 @api_view(['GET'])
 def helloAPI(request):
     return Response("hello world! 안녕하세요")

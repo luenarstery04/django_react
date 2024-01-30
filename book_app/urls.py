@@ -1,7 +1,8 @@
 from django.urls import path
-from .views import helloAPI, BooksAPIMixins, BookAPIMixins, BookSearchList, BooksChart, file_upload_one
+from .views import helloAPI, BooksAPIMixins, BookAPIMixins, BookSearchList, BooksChart, file_upload_one, index
 
 urlpatterns = [
+    path('', index, name='index'),
     path("hello/", helloAPI),
     path("books/", BooksAPIMixins.as_view()),
     path("book/<str:bookno>/", BookAPIMixins.as_view()),
